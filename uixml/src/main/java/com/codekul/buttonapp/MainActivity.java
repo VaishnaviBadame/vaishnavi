@@ -37,18 +37,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private void makeUpperCase(View view) {
-            EditText edtAnyName = (EditText) findViewById(R.id.editName);
-            String data = edtAnyName.getText().toString();
-            edtAnyName.setText(data.toUpperCase());
+            EditText editName = (EditText) findViewById(R.id.editName);
+            String data = editName.getText().toString();
+            editName.setText(data.toUpperCase());
         }
 
         private class Click implements View.OnClickListener {
             @Override
             public void onClick(View v) {
 
-                EditText edtAnyName = (EditText) findViewById(R.id.editName);
-                String data = edtAnyName.getText().toString();
-                edtAnyName.setText(data.toUpperCase());
+                EditText editName = (EditText) findViewById(R.id.editName);
+                String data = editName.getText().toString();
+                editName.setText(data.toUpperCase());
 
                 Log.i(TAG, data);
             }
